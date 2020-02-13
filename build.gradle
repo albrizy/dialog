@@ -1,0 +1,33 @@
+ext.config = [
+    libName: 'com.afollestad.material-dialogs',
+    libVersion: '0.9.6.0',
+    libVersionCode: 1,
+
+    buildToolsVersion: '29.0.1',
+    minSdkVersion: 21,
+    targetSdkVersion: 29,
+]
+
+buildscript {
+    repositories {
+        google()
+        jcenter()
+        maven {url 'https://jitpack.io'}
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.0.1'
+		classpath 'com.github.dcendents:android-maven-gradle-plugin:2.1'
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+        maven {url 'https://jitpack.io'}
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="md_bg_corner_radius">8dp</dimen>
+
+    <style name="MD_Title.Text" parent="MD_Title.TextBase">
+        <item name="android:fontFamily">@font/md_medium</item>
+    </style>
+
+    <style name="MD_ActionButton.Text" parent="MD_ActionButton.TextBase">
+        <item name="android:fontFamily">@font/md_medium</item>
+    </style>
+
+</resources>
